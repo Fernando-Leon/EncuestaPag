@@ -217,9 +217,27 @@ input[type="checkbox"]{
 /*Responsive dising*/
 
 
+@media (max-width: 361px){
+    #main {
+        width: 100%;
+    }
+    #title {
+        width: 60%;
+        font-size: 22px;
+    }
+    #survey-form {
+        width: 90%;
+        font-size: 15px;
+    }
+    #description {
+        width: 80%;
+        font-size: 15px;
+    } 
+}
+
 @media (max-width: 578px){
     #main {
-        width: 578px;
+        width: 100%;
     }
     #title {
         width: 60%;
@@ -237,7 +255,7 @@ input[type="checkbox"]{
 
 @media (max-width: 800px){
     #main {
-        width: 800px;
+        width: 100%;
     }
     #title {
         width: 50%;
@@ -255,7 +273,7 @@ input[type="checkbox"]{
 
 @media (max-width: 1000px){
     #main {
-        width: 1000px;
+        width: 100%;
     }
     #title {
         width: 50%;
