@@ -3,6 +3,7 @@
     margin: 0;
     border: none;
 	outline: none;
+    font-family: sans-serif;
     /*
     list-style: none;
 	text-decoration: none;
@@ -28,6 +29,7 @@
     padding-bottom: 30px;
     padding-bottom: 10px;
     color: #fff;
+    height: auto;
 }
 
 #description {
@@ -37,6 +39,8 @@
     padding-top: 10px;
     padding-bottom: 30px;
     color: #fff;
+    font-size: 16px;
+    height: auto;
 }
 
 #survey-form {
@@ -51,6 +55,7 @@
     flex-direction: column;
     border-radius: 3px;
     margin-bottom: 50px;
+    font-size: 16px;
 }
 
 input[type="text"], input[type="email"], input[type="number"], select, textarea, input[type="submit"], label, div{
@@ -62,6 +67,7 @@ input[type="text"], input[type="email"], input[type="number"], select, textarea,
 
 label {
     margin-bottom: 0px;
+    color: #000;
 }
 
 textarea {
@@ -69,18 +75,38 @@ textarea {
     min-width: 90%;
     min-height: 50px;
     max-height: 200px;
+    padding-top: 3px;
 }
 
 input[type="text"], input[type="email"], input[type="number"], select, textarea, input[type="submit"]{
     height: 35px;
     border-radius: 3px;
     padding-left: 5px;
+    color: #666F88;
 }
 
 input[type="submit"]{
     background: linear-gradient(36deg, #80CEE1, #EA899A);
     color: #fff;
+    outline: solid 1px #fff;
 }
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="number"]:hover, textarea:hover, select:hover{
+    background: linear-gradient(36deg, #80CEE1, #EA899A);
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, textarea:focus, select:focus{
+    animation-name: fade;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    color: #fff;
+    outline: solid 1px #fff;
+}
+
+input[type="checkbox"]{
+    padding-right: 5px;
+}
+
 
 @keyframes fade{
 0%{background: linear-gradient( 0grad, #80CEE1, #EA899A);}
@@ -184,4 +210,63 @@ input[type="submit"]{
 98%{background: linear-gradient(392grad, #80CEE1, #EA899A);}
 99%{background: linear-gradient(396grad, #80CEE1, #EA899A);}
 100%{background: linear-gradient(400grad, #80CEE1, #EA899A);}
+}
+
+
+
+/*Responsive dising*/
+
+
+@media (max-width: 578px){
+    #main {
+        width: 578px;
+    }
+    #title {
+        width: 60%;
+        font-size: 22px;
+    }
+    #survey-form {
+        width: 80%;
+        font-size: 15px;
+    }
+    #description {
+        width: 80%;
+        font-size: 15px;
+    } 
+}
+
+@media (max-width: 800px){
+    #main {
+        width: 800px;
+    }
+    #title {
+        width: 50%;
+        font-size: 22px;
+    }
+    #survey-form {
+        width: 70%;
+        font-size: 15px;
+    }
+    #description {
+        width: 70%;
+        font-size: 15px;
+    } 
+}
+
+@media (max-width: 1000px){
+    #main {
+        width: 1000px;
+    }
+    #title {
+        width: 50%;
+        font-size: 22px;
+    }
+    #survey-form {
+        width: 70%;
+        font-size: 15px;
+    }
+    #description {
+        width: 70%;
+        font-size: 15px;
+    } 
 }
