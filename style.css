@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+	outline: none;
+    /*
+    list-style: none;
+	text-decoration: none;
+    background: linear-gradient(36deg, #CCFFFF, #FFCCCC);
+    background: linear-gradient(36deg, #9FD5D1, #F2B8D8);
+    */
+}
+
+#main {
+    background: linear-gradient(36deg, #80CEE1, #EA899A);
+    width: 100%;
+    display: grid;
+    animation-name: fade;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+#title {
+    width: 80%;
+    justify-self: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+#description {
+    width: 80%;
+    justify-self: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+#survey-form {
+    width: 40%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    margin-bottom: 50px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select, textarea, input[type="submit"], label, div{
+    width: 90%;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-bottom: 0px;
+}
+
+textarea {
+    max-width: 90%;
+    min-width: 90%;
+    min-height: 50px;
+    max-height: 200px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select, textarea, input[type="submit"]{
+    height: 35px;
+    border-radius: 3px;
+    padding-left: 5px;
+}
+
+input[type="submit"]{
+    background: linear-gradient(36deg, #80CEE1, #EA899A);
+    color: #fff;
+}
+
+@keyframes fade{
+0%{background: linear-gradient( 0grad, #80CEE1, #EA899A);}
+1%{background: linear-gradient( 4grad, #80CEE1, #EA899A);}
+2%{background: linear-gradient( 8grad, #80CEE1, #EA899A);}
+3%{background: linear-gradient( 12grad, #80CEE1, #EA899A);}
+4%{background: linear-gradient( 16grad, #80CEE1, #EA899A);}
+5%{background: linear-gradient( 20grad, #80CEE1, #EA899A);}
+6%{background: linear-gradient( 24grad, #80CEE1, #EA899A);}
+7%{background: linear-gradient( 28grad, #80CEE1, #EA899A);}
+8%{background: linear-gradient( 32grad, #80CEE1, #EA899A);}
+9%{background: linear-gradient( 36grad, #80CEE1, #EA899A);}
+10%{background: linear-gradient( 40grad, #80CEE1, #EA899A);}
+11%{background: linear-gradient( 44grad, #80CEE1, #EA899A);}
+12%{background: linear-gradient( 48grad, #80CEE1, #EA899A);}
+13%{background: linear-gradient( 52grad, #80CEE1, #EA899A);}
+14%{background: linear-gradient( 56grad, #80CEE1, #EA899A);}
+15%{background: linear-gradient( 60grad, #80CEE1, #EA899A);}
+16%{background: linear-gradient( 64grad, #80CEE1, #EA899A);}
+17%{background: linear-gradient( 68grad, #80CEE1, #EA899A);}
+18%{background: linear-gradient( 72grad, #80CEE1, #EA899A);}
+19%{background: linear-gradient( 76grad, #80CEE1, #EA899A);}
+20%{background: linear-gradient( 80grad, #80CEE1, #EA899A);}
+21%{background: linear-gradient( 84grad, #80CEE1, #EA899A);}
+22%{background: linear-gradient( 88grad, #80CEE1, #EA899A);}
+23%{background: linear-gradient( 92grad, #80CEE1, #EA899A);}
+24%{background: linear-gradient( 96grad, #80CEE1, #EA899A);}
+25%{background: linear-gradient( 100grad, #80CEE1, #EA899A);}
+26%{background: linear-gradient( 104grad, #80CEE1, #EA899A);}
+27%{background: linear-gradient( 108grad, #80CEE1, #EA899A);}
+28%{background: linear-gradient( 112grad, #80CEE1, #EA899A);}
+29%{background: linear-gradient( 116grad, #80CEE1, #EA899A);}
+30%{background: linear-gradient( 120grad, #80CEE1, #EA899A);}
+31%{background: linear-gradient( 124grad, #80CEE1, #EA899A);}
+32%{background: linear-gradient( 128grad, #80CEE1, #EA899A);}
+33%{background: linear-gradient( 132grad, #80CEE1, #EA899A);}
+34%{background: linear-gradient( 136grad, #80CEE1, #EA899A);}
+35%{background: linear-gradient( 140grad, #80CEE1, #EA899A);}
+36%{background: linear-gradient( 144grad, #80CEE1, #EA899A);}
+37%{background: linear-gradient( 148grad, #80CEE1, #EA899A);}
+38%{background: linear-gradient( 152grad, #80CEE1, #EA899A);}
+39%{background: linear-gradient( 156grad, #80CEE1, #EA899A);}
+40%{background: linear-gradient( 160grad, #80CEE1, #EA899A);}
+41%{background: linear-gradient( 164grad, #80CEE1, #EA899A);}
+42%{background: linear-gradient( 168grad, #80CEE1, #EA899A);}
+43%{background: linear-gradient( 172grad, #80CEE1, #EA899A);}
+44%{background: linear-gradient( 176grad, #80CEE1, #EA899A);}
+45%{background: linear-gradient( 180grad, #80CEE1, #EA899A);}
+46%{background: linear-gradient( 184grad, #80CEE1, #EA899A);}
+47%{background: linear-gradient( 188grad, #80CEE1, #EA899A);}
+48%{background: linear-gradient( 192grad, #80CEE1, #EA899A);}
+49%{background: linear-gradient( 196grad, #80CEE1, #EA899A);}
+50%{background: linear-gradient( 200grad, #80CEE1, #EA899A);}
+51%{background: linear-gradient( 204grad, #80CEE1, #EA899A);}
+52%{background: linear-gradient( 208grad, #80CEE1, #EA899A);}
+53%{background: linear-gradient( 212grad, #80CEE1, #EA899A);}
+54%{background: linear-gradient( 216grad, #80CEE1, #EA899A);}
+55%{background: linear-gradient( 220grad, #80CEE1, #EA899A);}
+56%{background: linear-gradient( 224grad, #80CEE1, #EA899A);}
+57%{background: linear-gradient( 228grad, #80CEE1, #EA899A);}
+58%{background: linear-gradient( 232grad, #80CEE1, #EA899A);}
+59%{background: linear-gradient( 236grad, #80CEE1, #EA899A);}
+60%{background: linear-gradient( 240grad, #80CEE1, #EA899A);}
+61%{background: linear-gradient( 244grad, #80CEE1, #EA899A);}
+62%{background: linear-gradient( 248grad, #80CEE1, #EA899A);}
+63%{background: linear-gradient( 252grad, #80CEE1, #EA899A);}
+64%{background: linear-gradient( 256grad, #80CEE1, #EA899A);}
+65%{background: linear-gradient( 260grad, #80CEE1, #EA899A);}
+66%{background: linear-gradient( 264grad, #80CEE1, #EA899A);}
+67%{background: linear-gradient( 268grad, #80CEE1, #EA899A);}
+68%{background: linear-gradient( 272grad, #80CEE1, #EA899A);}
+69%{background: linear-gradient( 276grad, #80CEE1, #EA899A);}
+70%{background: linear-gradient( 280grad, #80CEE1, #EA899A);}
+71%{background: linear-gradient( 284grad, #80CEE1, #EA899A);}
+72%{background: linear-gradient(288grad, #80CEE1, #EA899A);}
+73%{background: linear-gradient(292grad, #80CEE1, #EA899A);}
+74%{background: linear-gradient(296grad, #80CEE1, #EA899A);}
+75%{background: linear-gradient(300grad, #80CEE1, #EA899A);}
+76%{background: linear-gradient(304grad, #80CEE1, #EA899A);}
+77%{background: linear-gradient(308grad, #80CEE1, #EA899A);}
+78%{background: linear-gradient(312grad, #80CEE1, #EA899A);}
+79%{background: linear-gradient(316grad, #80CEE1, #EA899A);}
+80%{background: linear-gradient(320grad, #80CEE1, #EA899A);}
+81%{background: linear-gradient(324grad, #80CEE1, #EA899A);}
+82%{background: linear-gradient(328grad, #80CEE1, #EA899A);}
+83%{background: linear-gradient(332grad, #80CEE1, #EA899A);}
+84%{background: linear-gradient(336grad, #80CEE1, #EA899A);}
+85%{background: linear-gradient(340grad, #80CEE1, #EA899A);}
+86%{background: linear-gradient(344grad, #80CEE1, #EA899A);}
+87%{background: linear-gradient(348grad, #80CEE1, #EA899A);}
+88%{background: linear-gradient(352grad, #80CEE1, #EA899A);}
+89%{background: linear-gradient(356grad, #80CEE1, #EA899A);}
+90%{background: linear-gradient(360grad, #80CEE1, #EA899A);}
+91%{background: linear-gradient(364grad, #80CEE1, #EA899A);}
+92%{background: linear-gradient(368grad, #80CEE1, #EA899A);}
+93%{background: linear-gradient(372grad, #80CEE1, #EA899A);}
+94%{background: linear-gradient(376grad, #80CEE1, #EA899A);}
+95%{background: linear-gradient(380grad, #80CEE1, #EA899A);}
+96%{background: linear-gradient(384grad, #80CEE1, #EA899A);}
+97%{background: linear-gradient(388grad, #80CEE1, #EA899A);}
+98%{background: linear-gradient(392grad, #80CEE1, #EA899A);}
+99%{background: linear-gradient(396grad, #80CEE1, #EA899A);}
+100%{background: linear-gradient(400grad, #80CEE1, #EA899A);}
+}
